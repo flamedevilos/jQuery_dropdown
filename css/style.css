@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  display: flex;
+  margin: 20px;
+}
+/*
+label {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+#multi-select-dropdown {
+  width: 350px;
+  max-width: 100%;
+  background-color: inherit;
+}
+.vscomp-toggle-button {
+  padding: 10px 30px 10px 10px;
+  border-radius: 6px;
+}*/
+
+.content form {
+  border: 12px solid #f8f8f8;
+  background: #f4f4f4;
+  padding: 30px 45px 45px;
+  margin: 70px 25px 40px;
+  border-radius: 5px;
+  max-width: 900px;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.2);
+}
+.content label {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  color: #000;
+  text-shadow: 0 0 0 #666;
+  padding: 5px 0 8px;
+}
+.content label:not(:first-of-type) {
+  margin-top: 30px;
+}
+#multi-select-dropdown {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background: #fefefe;
+}
+.vscomp-toggle-button {
+  padding: 10px 30px 10px 10px;
+}
+.content select {
+  width: 100%;
+  max-width: 300px;
+}

@@ -1,0 +1,68 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/virtual-select.min.css" />
+    <!-- Light Theme -->
+    <link href="css/themes/light.css" rel="stylesheet" />
+    <!-- OR Dark Theme 
+    <link href="css/themes/dark.css" rel="stylesheet" /> -->
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="content">
+        <form>
+          <label for="Multi-Dropdown-checkbox"
+            >Multiple Dropdown with checkbox select</label
+          >
+          <select
+            multiple
+            name="native-select"
+            id="multi-select-dropdown"
+            placeholder="Select option"
+            data-search="false"
+            data-silent-initial-value-set="true"
+          >
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+
+          <label
+            >Simple (with images, search and prepended placeholder
+            option)</label
+          >
+          <select name="simple" data-placeholder="Country...">
+            <optgroup label="Europe" data-image="img/eu.svg">
+              <option value="ita" data-image="img/ita.svg">Italy</option>
+              <option value="fra" data-image="img/fra.png" disabled>
+                France is disabled
+              </option>
+              <option value="esp" data-image="img/esp.png">Spain</option>
+            </optgroup>
+            <optgroup label="Asia">
+              <option value="jap">Japan</option>
+              <option value="kor">Korea</option>
+              <option value="chn" disabled>China is disabled</option>
+            </optgroup>
+          </select>
+
+          <label>Multiple (max 2 selectable options)</label>
+          <select name="multiple" data-placeholder="Select something" multiple>
+            <option value="lorem">Lorem</option>
+            <option value="ipsum" selected>Ipsum is disabled</option>
+            <option value="dolor">Dolor</option>
+          </select>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+    <!-- Core JavaScript -->
+    <script src="js/lc_select.js"></script>
+    <script src="js/virtual-select.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
